@@ -12,8 +12,8 @@ function Astronauts() {
     dispatch(fetchAstronauts());
   }
 
-  const astronautsList = astronauts.map((astro) => (
-    <li key={astro.id}>{astro.name}</li>
+  const astronautsList = astronauts.map((astro, index) => (
+    <li key={index}>{astro.name}</li>
   ));
 
   return (
