@@ -19,7 +19,7 @@ export function fetchAstronauts(astronauts) {
 // Reducers
 const initialState = {
   entities: [], //array of astronauts
-  isLoading: false
+  isLoading: null
 };
 
 export default function reducer(state = initialState, action) {
