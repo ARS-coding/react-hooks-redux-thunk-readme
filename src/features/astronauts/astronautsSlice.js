@@ -1,5 +1,5 @@
 // Action Creators
-export function fetchAstronauts(astronauts) {
+export function fetchAstronauts() {
   return (dispatch) => {
     dispatch({ type: "astronauts/astronautsLoading" });
     fetch("http://api.open-notify.org/astros.json")
@@ -9,11 +9,6 @@ export function fetchAstronauts(astronauts) {
         payload: json.people // array of objects
       }));
   }
-  
-  // {
-  //   type: "astronauts/astronautsLoaded",
-  //   payload: astronauts,
-  // };
 }
 
 // Reducers
